@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c15d277-c936-4eb7-ac8b-59d366af15cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="1c15d277-c936-4eb7-ac8b-59d366af15cc" name="Default Changelist" comment="Add .gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CameraViewer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CameraViewer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/stream_data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/vis.util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/vis.util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/websocket_client.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/websocket_client.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +41,15 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="1jTNkS0bAi1TW5SdIn4cbvvoNDV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -23,16 +57,29 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github_projects\Iclone_Mocap_System\iClone_mocap_web_app\src\util" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,16 +89,71 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603824267141</updated>
-      <workItem from="1603824269835" duration="673000" />
+      <workItem from="1603824269835" duration="791000" />
+      <workItem from="1603825649270" duration="603000" />
+      <workItem from="1603840952393" duration="1469000" />
+      <workItem from="1603845282433" duration="655000" />
+      <workItem from="1603848585306" duration="1350000" />
+      <workItem from="1603900831932" duration="2043000" />
+      <workItem from="1603991936620" duration="15000" />
+      <workItem from="1603992134757" duration="596000" />
+      <workItem from="1604023001903" duration="15000" />
+      <workItem from="1604023752079" duration="354000" />
+      <workItem from="1604024121191" duration="7000" />
+      <workItem from="1604598242745" duration="1169000" />
+      <workItem from="1604648101410" duration="24000" />
+      <workItem from="1604648135550" duration="766000" />
+      <workItem from="1604692254924" duration="870000" />
+      <workItem from="1604896628727" duration="349000" />
+      <workItem from="1604899290420" duration="914000" />
+      <workItem from="1604900216827" duration="3666000" />
+      <workItem from="1605041932933" duration="1198000" />
+      <workItem from="1605106260562" duration="474000" />
+      <workItem from="1605111531490" duration="263000" />
+      <workItem from="1605126678409" duration="608000" />
+      <workItem from="1605307666368" duration="395000" />
+      <workItem from="1605310873256" duration="159000" />
+      <workItem from="1605311052926" duration="112000" />
+      <workItem from="1605312401676" duration="759000" />
+      <workItem from="1605313543387" duration="1936000" />
+      <workItem from="1605316849376" duration="4393000" />
+      <workItem from="1605323135747" duration="43000" />
+      <workItem from="1605323189106" duration="161000" />
+      <workItem from="1606174042241" duration="311000" />
+      <workItem from="1606174928270" duration="2232000" />
+      <workItem from="1606186919356" duration="77000" />
+      <workItem from="1606187114110" duration="1445000" />
     </task>
+    <task id="LOCAL-00001" summary="Add .gitignore">
+      <created>1603824991127</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603824991127</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="Add .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add .gitignore" />
   </component>
 </project>

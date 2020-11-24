@@ -1,4 +1,4 @@
-import StreamData from "./stream_data";
+import WebSocketClient from "./websocket_client";
 
 const websockettoRoom = 'pythonclient'
 
@@ -23,24 +23,28 @@ export default class VisUtil {
     static drawHandKeypoints(videoCanvasCtx, keypoints, color) {
         ctx = videoCanvasCtx
         let wholeHand = []
+
         const keypointsArray = keypoints;
         const fingers = Object.keys(fingerLookupIndices);
+        let data = {}
         for (let i = 0; i < fingers.length; i++) {
-            let data = {}
             const finger = fingers[i];
-            const points = fingerLookupIndices[finger].map(idx => keypoints[idx]);
-            //Send Data to be streamed
+            const points = fingerLookupIndices[finger].map(idx => keypoints[idx])
             data.points = points
-            // data.finger = finger
+            data.finger = finger
             wholeHand.push(data)
             this.drawHandPath(points, false, color);
         }
-        StreamData.send_data(JSON.stringify(wholeHand), websockettoRoom)
+
+        WebSocketClient.sendData(JSON.stringify(wholeHand), websockettoRoom)
+
         for (let i = 0; i < keypointsArray.length; i++) {
             const y = keypointsArray[i][0];
             const x = keypointsArray[i][1];
             this.drawHandPoint(x - 2, y - 2, 3);
         }
+
+
     }
 
     static drawHandPath(points, closePath, color) {
@@ -56,40 +60,4 @@ export default class VisUtil {
         ctx.stroke(region);
     }
 
-    static drawPoint(y, x, r) {
-        ctx.beginPath();
-        ctx.arc(x, y, r, 0, 2 * Math.PI);
-        ctx.fill();
-    }
-
-    static drawKeypoints(videoCanvasCtx, keypoints) {
-        ctx = videoCanvasCtx
-        const keypointsArray = keypoints
-
-        for (let i = 0; i < keypointsArray.length; i++) {
-            const y = keypointsArray[i][0];
-            const x = keypointsArray[i][1];
-            this.drawPoint(x - 2, y - 2, 3);
-        }
-
-        const fingers = Object.keys(fingerLookupIndices);
-        for (let i = 0; i < fingers.length; i++) {
-            const finger = fingers[i];
-            const points = fingerLookupIndices[finger].map(idx => keypoints[idx]);
-            this.drawPath(points, false);
-        }
-    }
-
-    static drawPath(points, closePath) {
-        const region = new Path2D();
-        region.moveTo(points[0][0], points[0][1]);
-        for (let i = 1; i < points.length; i++) {
-            const point = points[i];
-            region.lineTo(point[0], point[1]);
-        }
-        if (closePath) {
-            region.closePath();
-        }
-        ctx.stroke(region);
-    }
 }

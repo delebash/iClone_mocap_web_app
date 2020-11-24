@@ -15,8 +15,8 @@ import VideoCamIcon from "@material-ui/icons/Videocam";
 import moment from "moment";
 
 import VisUtil from "../../util/vis.util";
+import WebsocketClient from '../../util/websocket_client'
 
-import StreamData from '../../util/stream_data'
 import * as posenet from '@tensorflow-models/posenet';
 import * as faceLandmarksDetection from '@tensorflow-models/face-landmarks-detection';
 import * as handpose from '@tensorflow-models/handpose';
@@ -62,7 +62,8 @@ class CameraViewer extends React.Component {
 
     componentDidMount = async () => {
         try {
-            StreamData.connect(websocketJoinRoom)
+            await WebsocketClient.connect()
+            await WebsocketClient.joinRoom(websocketJoinRoom)
             this.faceLandmarksDetection = await faceLandmarksDetection.load(
                 faceLandmarksDetection.SupportedPackages.mediapipeFacemesh);
             this.handModel = await handpose.load({detectionConfidence : 0.7})
