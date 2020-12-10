@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c15d277-c936-4eb7-ac8b-59d366af15cc" name="Default Changelist" comment="fix websocket">
+    <list default="true" id="1c15d277-c936-4eb7-ac8b-59d366af15cc" name="Default Changelist" comment="fix hand data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util/vis.util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/vis.util.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +127,7 @@
       <workItem from="1606505670105" duration="61000" />
       <workItem from="1606574752272" duration="18000" />
       <workItem from="1607167478486" duration="16000" />
-      <workItem from="1607553345562" duration="10015000" />
+      <workItem from="1607553345562" duration="10932000" />
     </task>
     <task id="LOCAL-00001" summary="Add .gitignore">
       <created>1603824991127</created>
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606189621822</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix hand data">
+      <created>1607576423172</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607576423172</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +181,7 @@
     </ignored-roots>
     <MESSAGE value="Add .gitignore" />
     <MESSAGE value="fix websocket" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix websocket" />
+    <MESSAGE value="fix hand data" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix hand data" />
   </component>
 </project>
