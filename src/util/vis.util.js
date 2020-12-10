@@ -26,8 +26,9 @@ export default class VisUtil {
 
         const keypointsArray = keypoints;
         const fingers = Object.keys(fingerLookupIndices);
-        let data = {}
+
         for (let i = 0; i < fingers.length; i++) {
+            let data = {}
             const finger = fingers[i];
             const points = fingerLookupIndices[finger].map(idx => keypoints[idx])
             data.points = points
@@ -35,7 +36,7 @@ export default class VisUtil {
             wholeHand.push(data)
             this.drawHandPath(points, false, color);
         }
-
+            let my = JSON.stringify(wholeHand)
         WebSocketClient.sendData(JSON.stringify(wholeHand), websockettoRoom)
 
         for (let i = 0; i < keypointsArray.length; i++) {
